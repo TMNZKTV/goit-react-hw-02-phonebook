@@ -1,0 +1,12 @@
+.contacts {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.contacts__item {
+    display: flex;
+    width: 280px;
+}
+.contacts__button {
+    margin-left: auto;
+}

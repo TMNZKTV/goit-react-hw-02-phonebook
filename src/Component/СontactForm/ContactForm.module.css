@@ -1,0 +1,10 @@
+.form__input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    outline: 1px solid transparent;
+}
+
+.form__button {
+    margin-top: 10px;
+}
