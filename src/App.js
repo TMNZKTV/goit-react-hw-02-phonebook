@@ -23,8 +23,11 @@ class App extends Component {
             number: data.number,
             id: uuidv4(),
         };
+        const normalizedContact = newContact.name.toLowerCase();
 
-        this.state.contacts.some(contact => contact.name === data.name)
+        this.state.contacts.some(
+            contact => contact.name.toLowerCase() === normalizedContact,
+        )
             ? alert(`${data.name} is already in Contacts!`)
             : this.setState(prevState => ({
                   contacts: [newContact, ...prevState.contacts],
