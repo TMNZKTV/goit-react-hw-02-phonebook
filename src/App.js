@@ -60,12 +60,7 @@ class App extends Component {
         return (
             <div>
                 <h1>Phonebook</h1>
-                <ContactForm
-                    onSubmit={this.addContact}
-                    contacts={this.state.contacts}
-                    addContact={this.addContact}
-                    findContact={this.findContact}
-                />
+                <ContactForm addContact={this.addContact} />
 
                 <h2>Contacts</h2>
                 <Filter
